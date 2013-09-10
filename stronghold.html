@@ -1,0 +1,47 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	        <script type="text/javascript" src="raphael-min.js"></script>
+	        <script type="text/javascript" src="jquery-min.js"></script>
+		<script type="text/javascript" src="stronghold.js"></script>
+	
+	</head>
+	
+	
+	
+<body>
+
+This is a tool to help triangulate the location
+of <a href="http://www.minecraftwiki.net/wiki/Stronghold">Strongholds</a>
+in the game <a href="http://minecraft.net/">Minecraft</a>. The concept
+is borrowed
+from <a href="https://www.youtube.com/watch?v=5zJ4aiGChgw">Minecraft4Daddys</a>'
+youtube video.
+
+<p> Activate the F3 coordinates readout.  Stand still and throw
+an <a href="http://www.minecraftwiki.net/wiki/Eye_of_Ender">Eye of Ender</a>.  Aim your cursor to follow the eye as
+it floats into the sky.  Record your x and z coordinates, and your
+"facing" (the second number in the f: readout ) and type them into
+this page.
+
+<p> Where the lines intersect is the rough location of the stronghold.
+Remember that as of the time we created this tool, there are three
+strongholds in each world at roughly 120 degree separation when
+measured from the world origin.
+
+   <div id = "inputs">
+      x: <input type="text" name="x" id="x"/>
+      z: <input type="text" name="z" id = "z"/>
+      theta: <input type="text" name="theta" id ="theta"/> 
+      <input type = "button" value = "Add Line" onClick="fromInputs()"/>
+   </div> 		
+   <div id = "paper">
+
+   </div>
+
+   <p align=right>
+     <i> by Jennifer Reynolds and Robert Forsman</i>
+</p>
+
+</body>
+
+</html>
