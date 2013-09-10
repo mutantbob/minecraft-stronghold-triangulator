@@ -23,7 +23,7 @@ window.onload = function(){
     annulus();
     gridify();
 
-    if (1) {
+    if (0) {
 	drawVector(-413, 12, 88.88)
 	drawVector(-427, 249, 108.687)
 	drawVector(-546, 292, 116.48)
