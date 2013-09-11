@@ -1,7 +1,5 @@
-/**
-   want to make something where there is a grid of randomly colored squares, which change positions (randomly) while maintaining there color
-**/
-
+// This is a module which plots Minecraft Stronghold locations 
+// using the parameters of a thrown Eye of Ender
 
 function Map(elt, cw, ch)
 {
@@ -11,11 +9,14 @@ function Map(elt, cw, ch)
     this.annulus = annulus;
     this.gridify = gridify;
     this.drawVector = drawVector;
+    this.replot = replot;
+    this.plotRow = plotRow;
 
     //
 
     this.paper_width = cw;
     this.paper_height = ch;
+    this.lines = [];
 
     this.length = 1200; // how long are the lines we draw?
     paper;
@@ -34,7 +35,7 @@ function Map(elt, cw, ch)
     this.annulus();
     this.gridify();
 
-    if (1) {
+    if (0) {
 	this.drawVector(-413, 12, 88.88)
 	this.drawVector(-427, 249, 108.687)
 	this.drawVector(-546, 292, 116.48)
@@ -46,9 +47,42 @@ function Map(elt, cw, ch)
 //
 
     function fromInputs(){
-	x = parseFloat($("#x")[0].value);
-	z = parseFloat($("#z")[0].value);
-	theta = parseFloat($("#theta")[0].value);
+	var x = parseFloat($("#x")[0].value);
+	var z = parseFloat($("#z")[0].value);
+	var theta = parseFloat($("#theta")[0].value);
+	this.drawVector(x,z,theta);
+    }
+
+    function replot() {
+	for (var i=0; i<this.lines.length; i++) {
+	    this.lines[i].remove();
+	}
+	this.lines = [];
+	
+	var raw = $("#data")[0].value;
+	var lines = raw.split("\n");
+	console.log(lines.length);
+	var map = this;
+	lines.map( function(row) { map.plotRow(row); } );
+    }
+
+    function plotRow(row)
+    {
+	row = row.trim();
+	//console.log(row);
+	var cols = row.split(/\s+/);
+	if (row.length==0) {
+	    return;
+	}
+	if (cols.length != 3) {
+	    alert("confusing data line '"+row+"', should be  'x z theta'");
+	    return;
+	}
+	var x = parseFloat(cols[0]);
+	var z = parseFloat(cols[1]);
+	var theta = parseFloat(cols[2]);
+	//console.log("x="+x+"; z="+z+"; theta="+theta);
+
 	this.drawVector(x,z,theta);
     }
 
@@ -60,7 +94,9 @@ function Map(elt, cw, ch)
 	//var path_string = "M 0 0 L 100 100";
 	line = this.paper.path(path_string);
 	this.worldToScreen(line);
-	console.log(path_string);	   
+	console.log(path_string);
+
+	this.lines.push(line);
     }
 
 
@@ -157,4 +193,5 @@ window.onload = function(){
 
     map = new Map(document.getElementById('paper'), 800, 600);
 
+    map.replot();
 }
