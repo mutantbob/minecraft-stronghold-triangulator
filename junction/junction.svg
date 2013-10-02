@@ -9,6 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:xlink="http://www.w3.org/1999/xlink"
    preserveAspectRatio="xMinYMin meet"
    viewBox="0 0 1300 1200"
    width="1300"
@@ -49,42 +50,34 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+<defs>
+
+<path style="fill:#000000;stroke:none"
+d="M 10 10 L 90,10 88,14 12,14 z
+M 17,24 L 15,20 85,20 83,24 z
+M 20,30 L 80,30 78,34 22,34 z
+M 25,40 L 75,40 73,44 27,44 z
+M 30,50 L 70,50 68,54 32,54 z
+M 35,60 L 65,60 63,64 37,64 z
+M 40,70 L 60,70 58,74 42,74 z
+M 45,80 L 55,80 53,84 47,84 z
+"
+id="stairs"/>
+</defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:200%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:32;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       x="225.71429"
-       y="283.79074"
-       id="text2985"
-       sodipodi:linespacing="200%"><tspan
-         sodipodi:role="line"
-         id="tspan2987"
-         x="225.71429"
-         y="283.79074">bacon</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 291.42857,180.93361 0,428.57143"
-       id="path3757"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 371.42857,175.21933 0,414.28571"
-       id="path3759"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 491.42857,195.21933 0,337.14285"
-       id="path3761"
-       inkscape:connector-curvature="0" />
     <g
        transform="translate(200, 100)"
        id="g12">
       <path
-         style="fill:#808080;stoke:none"
-         d="M 200,-50 L 200,500 300,500 300,100 800,100 800,600 200,600 200,700 1050,700 1050,-50 z     M 400,200 L 700,200 700,500 400,500 z     M 200,800 L 1050,800 1050,950 200,950 z     M 0,-50 L 0,700 -150,700 -150,-50 z     M 0,800 L 0,950 -150,950 -150,800 z"
+         style="fill:#a0a0a0;stroke:none"
+         d="M 200,-50 L 200,500 300,500 300,100 800,100 800,600 200,600 200,700 1050,700 1050,-50 z     
+M 400,200 L 700,200 700,500 600,500 600,300 400,300 z     
+M 200,800 L 1050,800 1050,950 200,950 z     
+M 0,-50 L 0,200 -100,200 -100,500 0,500 0,700 -150,700 -150,-50 z     
+M 0,800 L 0,950 -150,950 -150,800 z"
          id="path14" />
       <path
          style="fill:none; stroke:#000000"
@@ -95,34 +88,31 @@
          d=" M -100 0 L 1000 0 M -100 100 L 1000 100 M -100 200 L 1000 200 M -100 300 L 1000 300 M -100 400 L 1000 400 M -100 500 L 1000 500 M -100 600 L 1000 600 M -100 700 L 1000 700 M -100 800 L 1000 800 M -100 900 L 1000 900  "
          id="path17" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:200%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:32;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       x="34.285713"
-       y="194.28571"
-       id="text2998"
-       sodipodi:linespacing="200%"><tspan
-         sodipodi:role="line"
-         id="tspan3000"
-         x="34.285713"
-         y="194.28571">z-6</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:200%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:32;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       x="40.081055"
-       y="766.12964"
-       id="text3002"
-       sodipodi:linespacing="200%"><tspan
-         sodipodi:role="line"
-         id="tspan3004"
-         x="40.081055"
-         y="766.12964">z+0</tspan></text>
+    <g
+       transform="translate(300,800)"
+       id="g22">
+      <use xlink:href="#stairs" transform="translate(200,-300)"/>
+      <use xlink:href="#stairs" transform="translate(200,-400)"/>
+      <use xlink:href="#stairs" transform="translate(200,-500)"/>
+
+      <use xlink:href="#stairs" transform="translate(300,-600) rotate(90 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(400,-600) rotate(90 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(500,-600) rotate(90 50 50) "/>
+
+      <use xlink:href="#stairs" transform="translate(600,-300) rotate(180 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(600,-400) rotate(180 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(600,-500) rotate(180 50 50)"/>
+
+      <use xlink:href="#stairs" transform="translate(300,-200) rotate(-90 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(400,-200) rotate(-90 50 50) "/>
+      <use xlink:href="#stairs" transform="translate(500,-200) rotate(-90 50 50) "/>
+    </g>
     <g
        transform="translate(300,800)"
        id="g22">
       <text
          xml:space="preserve"
-         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:200%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:32;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:200%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:32;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
          x="35.75481"
          y="861.14996"
          id="text3006"
