@@ -97,6 +97,18 @@ function Map(elt, cw, ch)
 	console.log(path_string);
 
 	this.lines.push(line);
+
+	var radius=10
+	var anchor_string = "M "+(x-radius)+" "+z+" L"+
+	    x+" "+(z-radius)+" "+
+	    (x+radius)+" "+z+" "+
+	    x+" "+(z+radius)+" "
+	var blork = this.paper.path(anchor_string);
+	this.worldToScreen(blork)
+	blork.attr("stroke", "none")
+	blork.attr("fill", "#0000ff")
+
+	this.lines.push(blork);
     }
 
 
