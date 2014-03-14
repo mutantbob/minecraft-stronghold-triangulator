@@ -1,7 +1,20 @@
 
 function roundCoord(x)
 {
-    return Math.floor(x/64.0) * 64 + 32
+    var x0 = Math.floor(x/64.0) * 64;
+    if (x0<0) {
+	x0--;
+    }
+    return x0 + 32;
+}
+
+function roundCoordZ(x)
+{
+    var x0 = Math.floor(x/64.0) * 64;
+    if (x0<0) {
+	x0--;
+    }
+    return x0 + 32;
 }
 
 
@@ -18,7 +31,7 @@ function update()
     }
 
     var z_ = $("#z")[0].value;
-    z = roundCoord(parseInt(z_));
+    z = roundCoordZ(parseInt(z_));
 
     for (var i=-4; i<=1; i++) {
 	var delta = i+0.5;
